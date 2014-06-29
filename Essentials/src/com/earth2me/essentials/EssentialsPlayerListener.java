@@ -357,6 +357,9 @@ public class EssentialsPlayerListener implements Listener
 		}
 	}
 
+	//
+	// @TFM Removed
+	//
 	@EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
 	public void onPlayerTeleport(final PlayerTeleportEvent event)
 	{

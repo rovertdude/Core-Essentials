@@ -61,17 +61,4 @@ public class ES_Utils
 	{
 		logger.log(level, message);
 	}
-
-	public static String maskIpAddress(String address, CommandSender sender)
-	{
-		if (isSuperadmin(sender))
-		{
-			return address;
-		}
-		else
-		{
-			String[] address_parts = address.split("\\.");
-			return address_parts[0] + "." + address_parts[1] + ".*.*";
-		}
-	}
 }

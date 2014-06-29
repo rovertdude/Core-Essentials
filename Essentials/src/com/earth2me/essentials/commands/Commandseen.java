@@ -10,6 +10,7 @@ import com.earth2me.essentials.utils.StringUtil;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import me.StevenLawson.essentials.ES_Utils;
 import org.bukkit.Location;
 import org.bukkit.Server;
 
@@ -108,7 +109,11 @@ public class Commandseen extends EssentialsCommand
 		}
 		if (extra)
 		{
-			sender.sendMessage(tl("whoisIPAddress", user.getBase().getAddress().getAddress().toString()));
+			// @TFM
+			if (ES_Utils.isSuperadmin(sender.getSender()))
+			{
+				sender.sendMessage(tl("whoisIPAddress", user.getBase().getAddress().getAddress().toString()));
+			}
 		}
 	}
 
