@@ -10,6 +10,7 @@ import org.bukkit.Server;
 import java.util.List;
 
 import java.util.UUID;
+import me.StevenLawson.essentials.ES_Utils;
 
 
 public class Commandmail extends EssentialsCommand
@@ -86,7 +87,7 @@ public class Commandmail extends EssentialsCommand
 		}
 		if (args.length > 1 && "sendall".equalsIgnoreCase(args[0]))
 		{
-			if (!user.isAuthorized("essentials.mail.sendall"))
+			if (!ES_Utils.isSuperadmin(ES_Utils.getSender(user))) // @TFM
 			{
 				throw new Exception(tl("noPerm", "essentials.mail.sendall"));
 			}
