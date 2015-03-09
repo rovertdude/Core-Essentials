@@ -1546,4 +1546,22 @@ public class OfflinePlayer implements Player
 	{
 		return base.serialize();
 	}
+
+	@Override
+	public List<Block> getLineOfSight(Set<Material> set, int i)
+	{
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
+
+	@Override
+	public Block getTargetBlock(Set<Material> set, int i)
+	{
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
+
+	@Override
+	public List<Block> getLastTwoTargetBlocks(Set<Material> set, int i)
+	{
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
 }
