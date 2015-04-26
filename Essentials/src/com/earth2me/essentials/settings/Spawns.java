@@ -8,11 +8,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.bukkit.Location;
 
-
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Spawns implements StorageObject
-{
-	@MapValueType(Location.class)
-	private Map<String, Location> spawns = new HashMap<String, Location>();
+public class Spawns implements StorageObject {
+
+    @MapValueType(Location.class)
+    private Map<String, Location> spawns = new HashMap<String, Location>();
 }

@@ -17,83 +17,82 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitScheduler;
 import org.bukkit.scheduler.BukkitTask;
 
+public interface IEssentials extends Plugin {
 
-public interface IEssentials extends Plugin
-{
-	void addReloadListener(IConf listener);
+    void addReloadListener(IConf listener);
 
-	void reload();
+    void reload();
 
-	boolean onCommandEssentials(CommandSender sender, Command command, String commandLabel, String[] args, ClassLoader classLoader, String commandPath, String permissionPrefix, IEssentialsModule module);
+    boolean onCommandEssentials(CommandSender sender, Command command, String commandLabel, String[] args, ClassLoader classLoader, String commandPath, String permissionPrefix, IEssentialsModule module);
 
-	@Deprecated
-	User getUser(Object base);
-	
-	User getUser(UUID base);
-	
-	User getUser(String base);
-	
-	User getUser(Player base);
+    @Deprecated
+    User getUser(Object base);
 
-	I18n getI18n();
+    User getUser(UUID base);
 
-	User getOfflineUser(String name);
+    User getUser(String base);
 
-	World getWorld(String name);
+    User getUser(Player base);
 
-	int broadcastMessage(String message);
+    I18n getI18n();
 
-	int broadcastMessage(IUser sender, String message);
+    User getOfflineUser(String name);
 
-	int broadcastMessage(String permission, String message);
+    World getWorld(String name);
 
-	ISettings getSettings();
+    int broadcastMessage(String message);
 
-	BukkitScheduler getScheduler();
+    int broadcastMessage(IUser sender, String message);
 
-	IJails getJails();
+    int broadcastMessage(String permission, String message);
 
-	IWarps getWarps();
+    ISettings getSettings();
 
-	Worth getWorth();
+    BukkitScheduler getScheduler();
 
-	Backup getBackup();
+    IJails getJails();
 
-	Methods getPaymentMethod();
+    IWarps getWarps();
 
-	BukkitTask runTaskAsynchronously(Runnable run);
+    Worth getWorth();
 
-	BukkitTask runTaskLaterAsynchronously(Runnable run, long delay);
-	
-	BukkitTask runTaskTimerAsynchronously(Runnable run, long delay, long period);
+    Backup getBackup();
 
-	int scheduleSyncDelayedTask(Runnable run);
+    Methods getPaymentMethod();
 
-	int scheduleSyncDelayedTask(Runnable run, long delay);
+    BukkitTask runTaskAsynchronously(Runnable run);
 
-	int scheduleSyncRepeatingTask(Runnable run, long delay, long period);
+    BukkitTask runTaskLaterAsynchronously(Runnable run, long delay);
 
-	TNTExplodeListener getTNTListener();
+    BukkitTask runTaskTimerAsynchronously(Runnable run, long delay, long period);
 
-	PermissionsHandler getPermissionsHandler();
+    int scheduleSyncDelayedTask(Runnable run);
 
-	AlternativeCommandsHandler getAlternativeCommandsHandler();
+    int scheduleSyncDelayedTask(Runnable run, long delay);
 
-	void showError(CommandSource sender, Throwable exception, String commandLabel);
+    int scheduleSyncRepeatingTask(Runnable run, long delay, long period);
 
-	IItemDb getItemDb();
+    TNTExplodeListener getTNTListener();
 
-	UserMap getUserMap();
+    PermissionsHandler getPermissionsHandler();
 
-	Metrics getMetrics();
+    AlternativeCommandsHandler getAlternativeCommandsHandler();
 
-	void setMetrics(Metrics metrics);
+    void showError(CommandSource sender, Throwable exception, String commandLabel);
 
-	EssentialsTimer getTimer();
+    IItemDb getItemDb();
 
-	List<String> getVanishedPlayers();
+    UserMap getUserMap();
 
-	Collection<Player> getOnlinePlayers();
+    Metrics getMetrics();
 
-	Iterable<User> getOnlineUsers();
+    void setMetrics(Metrics metrics);
+
+    EssentialsTimer getTimer();
+
+    List<String> getVanishedPlayers();
+
+    Collection<Player> getOnlinePlayers();
+
+    Iterable<User> getOnlineUsers();
 }

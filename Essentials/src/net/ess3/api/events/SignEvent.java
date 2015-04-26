@@ -7,62 +7,53 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-
 /**
  * This handles common boilerplate for other SignEvent
  *
  */
-public class SignEvent extends Event implements Cancellable
-{
-	private static final HandlerList handlers = new HandlerList();
-	private boolean cancelled = false;
-	ISign sign;
-	EssentialsSign essSign;
-	IUser user;
+public class SignEvent extends Event implements Cancellable {
 
-	public SignEvent(final ISign sign, final EssentialsSign essSign, final IUser user)
-	{
-		super();
-		this.sign = sign;
-		this.essSign = essSign;
-		this.user = user;
-	}
+    private static final HandlerList handlers = new HandlerList();
+    private boolean cancelled = false;
+    ISign sign;
+    EssentialsSign essSign;
+    IUser user;
 
-	public ISign getSign()
-	{
-		return sign;
-	}
+    public SignEvent(final ISign sign, final EssentialsSign essSign, final IUser user) {
+        super();
+        this.sign = sign;
+        this.essSign = essSign;
+        this.user = user;
+    }
 
-	public EssentialsSign getEssentialsSign()
-	{
-		return essSign;
-	}
+    public ISign getSign() {
+        return sign;
+    }
 
-	public IUser getUser()
-	{
-		return user;
-	}
+    public EssentialsSign getEssentialsSign() {
+        return essSign;
+    }
 
-	@Override
-	public HandlerList getHandlers()
-	{
-		return handlers;
-	}
+    public IUser getUser() {
+        return user;
+    }
 
-	public static HandlerList getHandlerList()
-	{
-		return handlers;
-	}
+    @Override
+    public HandlerList getHandlers() {
+        return handlers;
+    }
 
-	@Override
-	public boolean isCancelled()
-	{
-		return cancelled;
-	}
+    public static HandlerList getHandlerList() {
+        return handlers;
+    }
 
-	@Override
-	public void setCancelled(boolean cancelled)
-	{
-		this.cancelled = cancelled;
-	}
+    @Override
+    public boolean isCancelled() {
+        return cancelled;
+    }
+
+    @Override
+    public void setCancelled(boolean cancelled) {
+        this.cancelled = cancelled;
+    }
 }

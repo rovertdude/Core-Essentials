@@ -10,135 +10,133 @@ import net.ess3.api.MaxMoneyException;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
+public interface IUser {
 
-public interface IUser
-{
-	boolean isAuthorized(String node);
+    boolean isAuthorized(String node);
 
-	boolean isAuthorized(IEssentialsCommand cmd);
+    boolean isAuthorized(IEssentialsCommand cmd);
 
-	boolean isAuthorized(IEssentialsCommand cmd, String permissionPrefix);
+    boolean isAuthorized(IEssentialsCommand cmd, String permissionPrefix);
 
-	void healCooldown() throws Exception;
+    void healCooldown() throws Exception;
 
-	void giveMoney(BigDecimal value) throws MaxMoneyException;
+    void giveMoney(BigDecimal value) throws MaxMoneyException;
 
-	void giveMoney(final BigDecimal value, final CommandSource initiator) throws MaxMoneyException;
-	
-	void payUser(final User reciever, final BigDecimal value) throws Exception;
+    void giveMoney(final BigDecimal value, final CommandSource initiator) throws MaxMoneyException;
 
-	void takeMoney(BigDecimal value);
+    void payUser(final User reciever, final BigDecimal value) throws Exception;
 
-	void takeMoney(final BigDecimal value, final CommandSource initiator);
+    void takeMoney(BigDecimal value);
 
-	boolean canAfford(BigDecimal value);
+    void takeMoney(final BigDecimal value, final CommandSource initiator);
 
-	Boolean canSpawnItem(final int itemId);
+    boolean canAfford(BigDecimal value);
 
-	void setLastLocation();
+    Boolean canSpawnItem(final int itemId);
 
-	void setLogoutLocation();
+    void setLastLocation();
 
-	void requestTeleport(final User player, final boolean here);
+    void setLogoutLocation();
 
-	ITeleport getTeleport();
+    void requestTeleport(final User player, final boolean here);
 
-	BigDecimal getMoney();
+    ITeleport getTeleport();
 
-	void setMoney(final BigDecimal value) throws MaxMoneyException;
+    BigDecimal getMoney();
 
-	void setAfk(final boolean set);
+    void setMoney(final BigDecimal value) throws MaxMoneyException;
 
-	/**
-	 * 'Hidden' Represents when a player is hidden from others. This status includes when the player is hidden via other
-	 * supported plugins. Use isVanished() if you want to check if a user is vanished by Essentials.
-	 *
-	 * @return If the user is hidden or not
-	 * @see isVanished
-	 */
-	boolean isHidden();
+    void setAfk(final boolean set);
 
-	void setHidden(boolean vanish);
+    /**
+     * 'Hidden' Represents when a player is hidden from others. This status includes when the player is hidden via other supported plugins. Use isVanished() if you want to check if a user is vanished
+     * by Essentials.
+     *
+     * @return If the user is hidden or not
+     * @see isVanished
+     */
+    boolean isHidden();
 
-	boolean isGodModeEnabled();
+    void setHidden(boolean vanish);
 
-	String getGroup();
+    boolean isGodModeEnabled();
 
-	boolean inGroup(final String group);
+    String getGroup();
 
-	boolean canBuild();
+    boolean inGroup(final String group);
 
-	long getTeleportRequestTime();
+    boolean canBuild();
 
-	void enableInvulnerabilityAfterTeleport();
+    long getTeleportRequestTime();
 
-	void resetInvulnerabilityAfterTeleport();
+    void enableInvulnerabilityAfterTeleport();
 
-	boolean hasInvulnerabilityAfterTeleport();
+    void resetInvulnerabilityAfterTeleport();
 
-	/**
-	 * 'Vanished' Represents when a player is hidden from others by Essentials. This status does NOT include when the
-	 * player is hidden via other plugins. Use isHidden() if you want to check if a user is vanished by any supported
-	 * plugin.
-	 *
-	 * @return If the user is vanished or not
-	 * @see isHidden
-	 */
-	boolean isVanished();
+    boolean hasInvulnerabilityAfterTeleport();
 
-	void setVanished(boolean vanish);
+    /**
+     * 'Vanished' Represents when a player is hidden from others by Essentials. This status does NOT include when the player is hidden via other plugins. Use isHidden() if you want to check if a user
+     * is vanished by any supported plugin.
+     *
+     * @return If the user is vanished or not
+     * @see isHidden
+     */
+    boolean isVanished();
 
-	boolean isIgnoreExempt();
+    void setVanished(boolean vanish);
 
-	public void sendMessage(String message);
+    boolean isIgnoreExempt();
 
-	/*
-	 * UserData
-	 */
-	Location getHome(String name) throws Exception;
+    public void sendMessage(String message);
 
-	Location getHome(Location loc) throws Exception;
+    /*
+     * UserData
+     */
+    Location getHome(String name) throws Exception;
 
-	List<String> getHomes();
+    Location getHome(Location loc) throws Exception;
 
-	void setHome(String name, Location loc);
+    List<String> getHomes();
 
-	void delHome(String name) throws Exception;
+    void setHome(String name, Location loc);
 
-	boolean hasHome();
+    void delHome(String name) throws Exception;
 
-	Location getLastLocation();
+    boolean hasHome();
 
-	Location getLogoutLocation();
+    Location getLastLocation();
 
-	long getLastTeleportTimestamp();
+    Location getLogoutLocation();
 
-	void setLastTeleportTimestamp(long time);
+    long getLastTeleportTimestamp();
 
-	String getJail();
+    void setLastTeleportTimestamp(long time);
 
-	void setJail(String jail);
+    String getJail();
 
-	List<String> getMails();
+    void setJail(String jail);
 
-	void addMail(String mail);
+    List<String> getMails();
 
-	boolean isAfk();
+    void addMail(String mail);
 
-	void setConfigProperty(String node, Object object);
+    boolean isAfk();
 
-	Set<String> getConfigKeys();
+    void setConfigProperty(String node, Object object);
 
-	Map<String, Object> getConfigMap();
+    Set<String> getConfigKeys();
 
-	Map<String, Object> getConfigMap(String node);
+    Map<String, Object> getConfigMap();
 
-	/*
-	 *  PlayerExtension
-	 */
-	Player getBase();
+    Map<String, Object> getConfigMap(String node);
 
-	CommandSource getSource();
+    /*
+     *  PlayerExtension
+     */
+    Player getBase();
 
-	public String getName();
+    CommandSource getSource();
+
+    public String getName();
 }

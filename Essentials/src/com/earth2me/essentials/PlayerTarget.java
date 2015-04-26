@@ -4,19 +4,16 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
+public class PlayerTarget implements ITarget {
 
-public class PlayerTarget implements ITarget
-{
-	private final String name;
+    private final String name;
 
-	public PlayerTarget(Player entity)
-	{
-		this.name = entity.getName();
-	}
+    public PlayerTarget(Player entity) {
+        this.name = entity.getName();
+    }
 
-	@Override
-	public Location getLocation()
-	{
-		return Bukkit.getServer().getPlayerExact(name).getLocation();
-	}
+    @Override
+    public Location getLocation() {
+        return Bukkit.getServer().getPlayerExact(name).getLocation();
+    }
 }

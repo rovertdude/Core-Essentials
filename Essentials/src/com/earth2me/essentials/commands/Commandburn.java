@@ -5,29 +5,24 @@ import static com.earth2me.essentials.I18n.tl;
 import com.earth2me.essentials.User;
 import org.bukkit.Server;
 
+public class Commandburn extends EssentialsCommand {
 
-public class Commandburn extends EssentialsCommand
-{
-	public Commandburn()
-	{
-		super("burn");
-	}
+    public Commandburn() {
+        super("burn");
+    }
 
-	@Override
-	protected void run(final Server server, final CommandSource sender, final String commandLabel, final String[] args) throws Exception
-	{
-		if (args.length < 2)
-		{
-			throw new NotEnoughArgumentsException();
-		}
+    @Override
+    protected void run(final Server server, final CommandSource sender, final String commandLabel, final String[] args) throws Exception {
+        if (args.length < 2) {
+            throw new NotEnoughArgumentsException();
+        }
 
-		if (args[0].trim().length() < 2)
-		{
-			throw new NotEnoughArgumentsException();
-		}
+        if (args[0].trim().length() < 2) {
+            throw new NotEnoughArgumentsException();
+        }
 
-		User user = getPlayer(server, sender, args, 0);
-		user.getBase().setFireTicks(Integer.parseInt(args[1]) * 20);
-		sender.sendMessage(tl("burnMsg", user.getDisplayName(), Integer.parseInt(args[1])));
-	}
+        User user = getPlayer(server, sender, args, 0);
+        user.getBase().setFireTicks(Integer.parseInt(args[1]) * 20);
+        sender.sendMessage(tl("burnMsg", user.getDisplayName(), Integer.parseInt(args[1])));
+    }
 }
