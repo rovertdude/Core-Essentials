@@ -52,6 +52,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import me.StevenLawson.essentials.EssentialsHandler;
 import net.ess3.api.Economy;
 import net.ess3.api.IEssentials;
 import net.ess3.api.IItemDb;
@@ -156,6 +157,7 @@ public class Essentials extends JavaPlugin implements net.ess3.api.IEssentials
 		try
 		{
 			LOGGER.setParent(this.getLogger());
+			EssentialsHandler.setLogger(LOGGER); // TFM
 			execTimer = new ExecuteTimer();
 			execTimer.start();
 			i18n = new I18n(this);
@@ -346,7 +348,7 @@ public class Essentials extends JavaPlugin implements net.ess3.api.IEssentials
 		Economy.setEss(null);
 		Trade.closeLog();
 		getUserMap().getUUIDMap().forceWriteUUIDMap();
-		
+
 		HandlerList.unregisterAll(this);
 	}
 
@@ -833,7 +835,7 @@ public class Essentials extends JavaPlugin implements net.ess3.api.IEssentials
 	{
 		return this.getScheduler().runTaskLaterAsynchronously(this, run, delay);
 	}
-	
+
 	@Override
 	public BukkitTask runTaskTimerAsynchronously(final Runnable run, final long delay, final long period)
 	{
