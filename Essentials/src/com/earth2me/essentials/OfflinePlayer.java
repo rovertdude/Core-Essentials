@@ -1546,4 +1546,28 @@ public class OfflinePlayer implements Player
 	{
 		return base.serialize();
 	}
+
+	@Override
+	public Spigot spigot()
+	{
+		return base.getPlayer().spigot();
+	}
+
+	@Override
+	public List<Block> getLineOfSight(Set<Material> arg0, int arg1)
+	{
+		return base.getPlayer().getLineOfSight(arg0, arg1);
+	}
+
+	@Override
+	public Block getTargetBlock(Set<Material> arg0, int arg1)
+	{
+		return base.getPlayer().getTargetBlock(arg0, arg1);
+	}
+
+	@Override
+	public List<Block> getLastTwoTargetBlocks(Set<Material> arg0, int arg1)
+	{
+		return base.getPlayer().getLastTwoTargetBlocks(arg0, arg1);
+	}
 }

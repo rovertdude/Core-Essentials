@@ -741,4 +741,22 @@ public class FakeWorld implements World
 	{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
+
+	@Override
+	public Collection<Entity> getNearbyEntities(Location arg0, double arg1, double arg2, double arg3)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	@Override
+	public Spigot spigot()
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
+	@Override
+	public WorldBorder getWorldBorder()
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 }

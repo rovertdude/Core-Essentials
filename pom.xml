@@ -44,6 +44,10 @@
 			<id>ess-repo</id>
 			<url>http://repo.ess3.net/content/groups/public</url>
 		</repository>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+    </repository>
 	</repositories>
 
 	<distributionManagement>
@@ -59,19 +63,14 @@
 
 	<modules>
 		<module>Essentials</module>
-		<module>EssentialsAntiBuild</module>
-		<module>EssentialsChat</module>
-		<module>EssentialsGeoIP</module>
-		<module>EssentialsProtect</module>
 		<module>EssentialsSpawn</module>
-		<module>EssentialsXMPP</module>
 	</modules>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>1.8-R0.1-SNAPSHOT</version>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>1.8.3-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -144,32 +143,7 @@
 						</artifactItem>
 						<artifactItem>
 							<groupId>${project.groupId}</groupId>
-							<artifactId>EssentialsAntiBuild</artifactId>
-							<version>${project.version}</version>
-						</artifactItem>
-						<artifactItem>
-							<groupId>${project.groupId}</groupId>
-							<artifactId>EssentialsChat</artifactId>
-							<version>${project.version}</version>
-						</artifactItem>
-						<artifactItem>
-							<groupId>${project.groupId}</groupId>
-							<artifactId>EssentialsGeoIP</artifactId>
-							<version>${project.version}</version>
-						</artifactItem>
-						<artifactItem>
-							<groupId>${project.groupId}</groupId>
-							<artifactId>EssentialsProtect</artifactId>
-							<version>${project.version}</version>
-						</artifactItem>
-						<artifactItem>
-							<groupId>${project.groupId}</groupId>
 							<artifactId>EssentialsSpawn</artifactId>
-							<version>${project.version}</version>
-						</artifactItem>
-						<artifactItem>
-							<groupId>${project.groupId}</groupId>
-							<artifactId>EssentialsXMPP</artifactId>
 							<version>${project.version}</version>
 						</artifactItem>
 					</artifactItems>
