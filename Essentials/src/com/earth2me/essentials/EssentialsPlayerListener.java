@@ -25,7 +25,6 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.*;
-import org.bukkit.event.player.PlayerLoginEvent.Result;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
@@ -370,25 +369,6 @@ public class EssentialsPlayerListener implements Listener
 		{
 			final Location updateLoc = loc;
 			user.getBase().setCompassTarget(updateLoc);
-		}
-	}
-
-	@EventHandler(priority = EventPriority.HIGH)
-	public void onPlayerLogin(final PlayerLoginEvent event)
-	{
-		switch (event.getResult())
-		{
-		case KICK_FULL:
-			final User kfuser = ess.getUser(event.getPlayer());
-			if (kfuser.isAuthorized("essentials.joinfullserver"))
-			{
-				event.allow();
-				return;
-			}
-			event.disallow(Result.KICK_FULL, tl("serverFull"));
-			break;
-		default:
-			break;
 		}
 	}
 
