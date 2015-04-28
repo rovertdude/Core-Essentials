@@ -2,6 +2,8 @@ package com.earth2me.essentials.commands;
 
 import com.earth2me.essentials.CommandSource;
 import static com.earth2me.essentials.I18n.tl;
+
+import com.earth2me.essentials.FloatUtil;
 import com.earth2me.essentials.User;
 import java.util.List;
 import org.bukkit.Server;
@@ -139,7 +141,7 @@ public class Commandspeed extends EssentialsCommand
 		float userSpeed;
 		try
 		{
-			userSpeed = Float.parseFloat(moveSpeed);
+			userSpeed = FloatUtil.parseFloat(moveSpeed);
 			if (userSpeed > 10f)
 			{
 				userSpeed = 10f;
