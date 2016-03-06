@@ -13,6 +13,7 @@ import org.bukkit.command.CommandSender;
 
 public class Commandmsg extends EssentialsLoopCommand
 {
+
 	final String translatedMe = tl("me");
 
 	public Commandmsg()
@@ -50,7 +51,7 @@ public class Commandmsg extends EssentialsLoopCommand
 		{
 			final IReplyTo replyTo = sender.isPlayer() ? ess.getUser(sender.getPlayer()) : Console.getConsoleReplyTo();
 			final String senderName = sender.isPlayer() ? sender.getPlayer().getDisplayName() : Console.NAME;
-			
+
 			sender.sendMessage(tl("msgFormat", translatedMe, Console.NAME, message));
 			CommandSender cs = Console.getCommandSender(server);
 			cs.sendMessage(tl("msgFormat", senderName, translatedMe, message));
@@ -59,12 +60,15 @@ public class Commandmsg extends EssentialsLoopCommand
 			return;
 		}
 
-		loopOnlinePlayers(server, sender, canWildcard, canWildcard, args[0], new String[]{message});
+		loopOnlinePlayers(server, sender, canWildcard, canWildcard, args[0], new String[]
+				  {
+					  message
+		});
 	}
 
 	@Override
 	protected void updatePlayer(final Server server, final CommandSource sender, final User matchedUser, final String[] args)
-	{		
+	{
 		final IReplyTo replyTo = sender.isPlayer() ? ess.getUser(sender.getPlayer()) : Console.getConsoleReplyTo();
 		final String senderName = sender.isPlayer() ? sender.getPlayer().getDisplayName() : Console.NAME;
 

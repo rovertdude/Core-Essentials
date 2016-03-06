@@ -26,6 +26,7 @@ import org.bukkit.util.Vector;
 
 public class OfflinePlayer implements Player
 {
+
 	private final transient Server server;
 	private transient Location location = new Location(null, 0, 0, 0, 0, 0);
 	private transient World world;
@@ -1548,20 +1549,20 @@ public class OfflinePlayer implements Player
 	}
 
 	@Override
-	public List<Block> getLineOfSight(Set<Material> set, int i)
+	public List<Block> getLineOfSight(Set<Material> arg0, int arg1)
 	{
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		return base.getPlayer().getLineOfSight(arg0, arg1);
 	}
 
 	@Override
-	public Block getTargetBlock(Set<Material> set, int i)
+	public Block getTargetBlock(Set<Material> arg0, int arg1)
 	{
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		return base.getPlayer().getTargetBlock(arg0, arg1);
 	}
 
 	@Override
-	public List<Block> getLastTwoTargetBlocks(Set<Material> set, int i)
+	public List<Block> getLastTwoTargetBlocks(Set<Material> arg0, int arg1)
 	{
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		return base.getPlayer().getLastTwoTargetBlocks(arg0, arg1);
 	}
 }

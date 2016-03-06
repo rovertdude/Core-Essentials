@@ -8,6 +8,7 @@ import org.bukkit.Server;
 
 public class Commandafk extends EssentialsCommand
 {
+
 	public Commandafk()
 	{
 		super("afk");
@@ -26,7 +27,7 @@ public class Commandafk extends EssentialsCommand
 			toggleAfk(user);
 		}
 	}
-	
+
 	@Override
 	public void run(Server server, CommandSource sender, String commandLabel, String[] args) throws Exception
 	{
@@ -68,4 +69,3 @@ public class Commandafk extends EssentialsCommand
 		}
 	}
 }
-

@@ -10,6 +10,7 @@ import org.bukkit.Server;
 
 public class Commandsudo extends EssentialsCommand
 {
+
 	public Commandsudo()
 	{
 		super("sudo");
@@ -53,6 +54,7 @@ public class Commandsudo extends EssentialsCommand
 		{
 			class SudoCommandTask implements Runnable
 			{
+
 				@Override
 				public void run()
 				{

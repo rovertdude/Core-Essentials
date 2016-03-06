@@ -8,6 +8,7 @@ import net.ess3.api.IEssentials;
 
 public class SignBalance extends EssentialsSign
 {
+
 	public SignBalance()
 	{
 		super("Balance");

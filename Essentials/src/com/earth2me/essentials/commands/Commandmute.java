@@ -11,6 +11,7 @@ import org.bukkit.Server;
 
 public class Commandmute extends EssentialsCommand
 {
+
 	public Commandmute()
 	{
 		super("mute");

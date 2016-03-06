@@ -11,6 +11,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Potions
 {
+
 	private static final Map<String, PotionEffectType> POTIONS = new HashMap<String, PotionEffectType>();
 	private static final Map<String, PotionEffectType> ALIASPOTIONS = new HashMap<String, PotionEffectType>();
 
@@ -108,7 +109,7 @@ public class Potions
 
 		POTIONS.put("saturation", PotionEffectType.SATURATION);
 		ALIASPOTIONS.put("food", PotionEffectType.SATURATION);
-		
+
 		POTIONS.put("waterbreathing", PotionEffectType.WATER_BREATHING);
 		ALIASPOTIONS.put("underwaterbreathing", PotionEffectType.WATER_BREATHING);
 		ALIASPOTIONS.put("waterbreath", PotionEffectType.WATER_BREATHING);

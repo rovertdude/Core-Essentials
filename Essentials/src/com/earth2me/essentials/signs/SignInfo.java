@@ -13,6 +13,7 @@ import net.ess3.api.IEssentials;
 
 public class SignInfo extends EssentialsSign
 {
+
 	public SignInfo()
 	{
 		super("Info");

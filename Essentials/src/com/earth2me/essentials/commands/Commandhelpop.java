@@ -11,6 +11,7 @@ import org.bukkit.Server;
 
 public class Commandhelpop extends EssentialsCommand
 {
+
 	public Commandhelpop()
 	{
 		super("helpop");

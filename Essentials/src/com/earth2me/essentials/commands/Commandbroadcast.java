@@ -9,6 +9,7 @@ import org.bukkit.Server;
 
 public class Commandbroadcast extends EssentialsCommand
 {
+
 	public Commandbroadcast()
 	{
 		super("broadcast");

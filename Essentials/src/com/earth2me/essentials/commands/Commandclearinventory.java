@@ -14,6 +14,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Commandclearinventory extends EssentialsCommand
 {
+
 	public Commandclearinventory()
 	{
 		super("clearinventory");

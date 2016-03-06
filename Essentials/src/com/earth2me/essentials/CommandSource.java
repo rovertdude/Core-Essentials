@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 
 public class CommandSource implements IReplyTo
 {
+
 	private CommandSource replyTo = null;
 	protected CommandSender sender;
 
@@ -27,7 +28,7 @@ public class CommandSource implements IReplyTo
 		}
 		return null;
 	}
-	
+
 	public final boolean isPlayer()
 	{
 		return (sender instanceof Player);
@@ -37,8 +38,7 @@ public class CommandSource implements IReplyTo
 	{
 		return this.sender = base;
 	}
-	
-	
+
 	public void sendMessage(String message)
 	{
 		if (!message.isEmpty())

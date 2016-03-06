@@ -7,6 +7,7 @@ import org.bukkit.Server;
 
 public class Commandtpahere extends EssentialsCommand
 {
+
 	public Commandtpahere()
 	{
 		super("tpahere");

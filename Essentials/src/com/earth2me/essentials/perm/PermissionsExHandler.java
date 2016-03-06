@@ -10,6 +10,7 @@ import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class PermissionsExHandler extends SuperpermsHandler
 {
+
 	private final transient PermissionManager manager;
 
 	public PermissionsExHandler()
@@ -43,13 +44,13 @@ public class PermissionsExHandler extends SuperpermsHandler
 		{
 			return null;
 		}
-		
+
 		String[] groupsNames = user.getGroupsNames();
 		if (groupsNames == null)
 		{
 			return null;
 		}
-		
+
 		return Arrays.asList(groupsNames);
 	}
 

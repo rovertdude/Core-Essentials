@@ -17,6 +17,7 @@ import org.bukkit.Bukkit;
 
 public class I18n implements net.ess3.api.II18n
 {
+
 	private static I18n instance;
 	private static final String MESSAGES = "messages";
 	private final transient Locale defaultLocale = Locale.getDefault();
@@ -45,7 +46,7 @@ public class I18n implements net.ess3.api.II18n
 		this.ess = ess;
 		defaultBundle = ResourceBundle.getBundle(MESSAGES, Locale.ENGLISH);
 		localeBundle = defaultBundle;
-		customBundle = NULL_BUNDLE;		
+		customBundle = NULL_BUNDLE;
 	}
 
 	public void onEnable()
@@ -173,6 +174,7 @@ public class I18n implements net.ess3.api.II18n
 
 	private static class FileResClassLoader extends ClassLoader
 	{
+
 		private final transient File dataFolder;
 
 		FileResClassLoader(final ClassLoader classLoader, final IEssentials ess)

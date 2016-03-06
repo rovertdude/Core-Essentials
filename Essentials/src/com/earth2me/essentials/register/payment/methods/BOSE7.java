@@ -14,6 +14,7 @@ import org.bukkit.plugin.Plugin;
  */
 public class BOSE7 implements Method
 {
+
 	private BOSEconomy BOSEconomy;
 
 	@Override
@@ -147,6 +148,7 @@ public class BOSE7 implements Method
 
 	public class BOSEAccount implements MethodAccount
 	{
+
 		private final String name;
 		private final BOSEconomy BOSEconomy;
 
@@ -229,6 +231,7 @@ public class BOSE7 implements Method
 
 	public class BOSEBankAccount implements MethodBankAccount
 	{
+
 		private final String bank;
 		private final BOSEconomy BOSEconomy;
 

@@ -13,6 +13,7 @@ import org.bukkit.event.server.PluginEnableEvent;
 
 public class EssentialsPluginListener implements Listener, IConf
 {
+
 	private final transient IEssentials ess;
 
 	public EssentialsPluginListener(final IEssentials ess)

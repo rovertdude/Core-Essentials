@@ -9,6 +9,7 @@ import org.bukkit.Server;
 
 public class Commandgetpos extends EssentialsCommand
 {
+
 	public Commandgetpos()
 	{
 		super("getpos");

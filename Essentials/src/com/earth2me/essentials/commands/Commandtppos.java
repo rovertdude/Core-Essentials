@@ -13,6 +13,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Commandtppos extends EssentialsCommand
 {
+
 	public Commandtppos()
 	{
 		super("tppos");

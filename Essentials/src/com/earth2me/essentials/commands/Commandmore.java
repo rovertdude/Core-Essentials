@@ -9,6 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Commandmore extends EssentialsCommand
 {
+
 	public Commandmore()
 	{
 		super("more");
@@ -22,7 +23,7 @@ public class Commandmore extends EssentialsCommand
 		{
 			throw new Exception(tl("cantSpawnItem", "Air"));
 		}
-		if (stack.getAmount() >= ((user.isAuthorized("essentials.oversizedstacks")) 
+		if (stack.getAmount() >= ((user.isAuthorized("essentials.oversizedstacks"))
 								  ? ess.getSettings().getOversizedStackSize() : stack.getMaxStackSize()))
 		{
 			throw new Exception(tl("fullStack"));

@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 public class Commandspeed extends EssentialsCommand
 {
+
 	public Commandspeed()
 	{
 		super("speed");

@@ -10,6 +10,7 @@ import org.bukkit.BanList;
 
 public class BanLookup
 {
+
 	public static Boolean isBanned(IEssentials ess, User user)
 	{
 		return isBanned(ess, user.getName());
@@ -17,9 +18,9 @@ public class BanLookup
 
 	public static Boolean isBanned(IEssentials ess, String name)
 	{
-		return getBanEntry(ess, name) != null;		
+		return getBanEntry(ess, name) != null;
 	}
-	
+
 	public static BanEntry getBanEntry(IEssentials ess, String name)
 	{
 		Set<BanEntry> benteries = ess.getServer().getBanList(BanList.Type.NAME).getBanEntries();
@@ -32,5 +33,5 @@ public class BanLookup
 		}
 		return null;
 	}
-	
+
 }

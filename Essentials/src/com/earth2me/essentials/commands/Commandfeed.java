@@ -10,6 +10,7 @@ import org.bukkit.event.entity.FoodLevelChangeEvent;
 
 public class Commandfeed extends EssentialsLoopCommand
 {
+
 	public Commandfeed()
 	{
 		super("feed");

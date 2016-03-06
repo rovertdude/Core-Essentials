@@ -6,21 +6,22 @@ import net.crystalyx.bukkit.simplyperms.SimplyPlugin;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
-public class SimplyPermsHandler extends SuperpermsHandler 
+
+public class SimplyPermsHandler extends SuperpermsHandler
 {
 
 	private final transient SimplyAPI api;
 
-	public SimplyPermsHandler(final Plugin plugin) 
+	public SimplyPermsHandler(final Plugin plugin)
 	{
-		this.api = ((SimplyPlugin) plugin).getAPI();
+		this.api = ((SimplyPlugin)plugin).getAPI();
 	}
 
 	@Override
 	public String getGroup(final Player base)
 	{
 		final List<String> groups = api.getPlayerGroups(base.getName());
-		if (groups == null || groups.isEmpty()) 
+		if (groups == null || groups.isEmpty())
 		{
 			return null;
 		}

@@ -10,6 +10,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class TimedTeleport implements Runnable
 {
+
 	private static final double MOVE_CONSTANT = 0.3;
 	private final IUser teleportOwner;
 	private final IEssentials ess;
@@ -91,6 +92,7 @@ public class TimedTeleport implements Runnable
 
 		class DelayedTeleportTask implements Runnable
 		{
+
 			@Override
 			public void run()
 			{

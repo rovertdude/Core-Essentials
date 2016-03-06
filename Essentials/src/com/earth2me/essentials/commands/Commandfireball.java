@@ -8,6 +8,7 @@ import org.bukkit.util.Vector;
 
 public class Commandfireball extends EssentialsCommand
 {
+
 	public Commandfireball()
 	{
 		super("fireball");
@@ -37,15 +38,15 @@ public class Commandfireball extends EssentialsCommand
 			{
 				type = Egg.class;
 			}
-			else if(args[0].equalsIgnoreCase("snowball"))
+			else if (args[0].equalsIgnoreCase("snowball"))
 			{
 				type = Snowball.class;
 			}
-			else if(args[0].equalsIgnoreCase("expbottle"))
+			else if (args[0].equalsIgnoreCase("expbottle"))
 			{
 				type = ThrownExpBottle.class;
 			}
-			else if(args[0].equalsIgnoreCase("large"))
+			else if (args[0].equalsIgnoreCase("large"))
 			{
 				type = LargeFireball.class;
 			}

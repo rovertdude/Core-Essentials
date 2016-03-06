@@ -16,6 +16,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Teleport implements net.ess3.api.ITeleport
 {
+
 	private final IUser teleportOwner;
 	private final IEssentials ess;
 	private TimedTeleport timedTeleport;

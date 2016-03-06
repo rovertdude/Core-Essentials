@@ -9,6 +9,7 @@ import org.bukkit.Server;
 
 public class Commandtogglejail extends EssentialsCommand
 {
+
 	public Commandtogglejail()
 	{
 		super("togglejail");

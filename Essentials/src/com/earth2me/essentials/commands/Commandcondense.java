@@ -18,6 +18,7 @@ import net.ess3.api.MaxMoneyException;
 
 public class Commandcondense extends EssentialsCommand
 {
+
 	public Commandcondense()
 	{
 		super("condense");
@@ -198,6 +199,7 @@ public class Commandcondense extends EssentialsCommand
 
 	private class SimpleRecipe implements Recipe
 	{
+
 		private ItemStack result;
 		private ItemStack input;
 

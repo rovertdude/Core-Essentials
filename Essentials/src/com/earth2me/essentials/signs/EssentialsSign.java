@@ -23,6 +23,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class EssentialsSign
 {
+
 	private static final Set<Material> EMPTY_SET = new HashSet<Material>();
 	protected static final BigDecimal MINTRANSACTION = new BigDecimal("0.01");
 	protected transient final String signName;
@@ -104,7 +105,7 @@ public class EssentialsSign
 		try
 		{
 			if (user.getBase().isDead() || !(user.isAuthorized("essentials.signs." + signName.toLowerCase(Locale.ENGLISH) + ".use")
-								   || user.isAuthorized("essentials.signs.use." + signName.toLowerCase(Locale.ENGLISH))))
+											 || user.isAuthorized("essentials.signs.use." + signName.toLowerCase(Locale.ENGLISH))))
 			{
 				return false;
 			}
@@ -527,6 +528,7 @@ public class EssentialsSign
 
 	static class EventSign implements ISign
 	{
+
 		private final transient SignChangeEvent event;
 		private final transient Block block;
 		private final transient Sign sign;
@@ -577,6 +579,7 @@ public class EssentialsSign
 
 	static class BlockSign implements ISign
 	{
+
 		private final transient Sign sign;
 		private final transient Block block;
 
@@ -623,6 +626,7 @@ public class EssentialsSign
 
 	public interface ISign
 	{
+
 		public String getLine(final int index);
 
 		public void setLine(final int index, final String text);

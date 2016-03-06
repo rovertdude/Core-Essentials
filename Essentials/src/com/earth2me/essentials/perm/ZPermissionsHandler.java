@@ -15,6 +15,7 @@ import org.tyrannyofheaven.bukkit.zPermissions.ZPermissionsService;
 
 public class ZPermissionsHandler extends SuperpermsHandler implements Listener
 {
+
 	private ZPermissionsService service = null;
 	private boolean hasGetPlayerPrimaryGroup = false; // This is a post-1.0 addition
 

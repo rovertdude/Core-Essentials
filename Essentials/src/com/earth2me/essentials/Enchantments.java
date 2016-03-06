@@ -11,6 +11,7 @@ import org.bukkit.enchantments.Enchantment;
 
 public class Enchantments
 {
+
 	private static final Map<String, Enchantment> ENCHANTMENTS = new HashMap<String, Enchantment>();
 	private static final Map<String, Enchantment> ALIASENCHANTMENTS = new HashMap<String, Enchantment>();
 

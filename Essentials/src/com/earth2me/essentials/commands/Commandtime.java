@@ -12,6 +12,7 @@ import org.bukkit.World;
 
 public class Commandtime extends EssentialsCommand
 {
+
 	public Commandtime()
 	{
 		super("time");
@@ -160,13 +161,11 @@ public class Commandtime extends EssentialsCommand
 		if (world != null)
 		{
 			worlds.add(world);
-		}
-		// If that fails, Is the argument something like "*" or "all"?
+		} // If that fails, Is the argument something like "*" or "all"?
 		else if (selector.equalsIgnoreCase("*") || selector.equalsIgnoreCase("all"))
 		{
 			worlds.addAll(server.getWorlds());
-		}
-		// We failed to understand the world target...
+		} // We failed to understand the world target...
 		else
 		{
 			throw new Exception(tl("invalidWorld"));
@@ -179,6 +178,7 @@ public class Commandtime extends EssentialsCommand
 
 class WorldNameComparator implements Comparator<World>
 {
+
 	@Override
 	public int compare(final World a, final World b)
 	{

@@ -11,6 +11,7 @@ import org.bukkit.Server;
 
 public class Commandsethome extends EssentialsCommand
 {
+
 	public Commandsethome()
 	{
 		super("sethome");

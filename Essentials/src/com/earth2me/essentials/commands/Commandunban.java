@@ -13,6 +13,7 @@ import org.bukkit.Server;
 
 public class Commandunban extends EssentialsCommand
 {
+
 	public Commandunban()
 	{
 		super("unban");

@@ -31,6 +31,7 @@ import org.bukkit.plugin.Plugin;
 
 public class KeywordReplacer implements IText
 {
+
 	private static final Pattern KEYWORD = Pattern.compile("\\{([^\\{\\}]+)\\}");
 	private static final Pattern KEYWORDSPLIT = Pattern.compile("\\:");
 	private final transient IText input;
@@ -359,8 +360,10 @@ public class KeywordReplacer implements IText
 }
 
 //When adding a keyword here, you also need to add the implementation above
+
 enum KeywordType
 {
+
 	PLAYER(KeywordCachable.CACHEABLE),
 	DISPLAYNAME(KeywordCachable.CACHEABLE),
 	USERNAME(KeywordCachable.NOTCACHEABLE),
@@ -413,6 +416,7 @@ enum KeywordType
 
 enum KeywordCachable
 {
+
 	CACHEABLE, // This keyword can be cached as a string
 	SUBVALUE, // This keyword can be cached as a map
 	NOTCACHEABLE; // This keyword should never be cached

@@ -9,8 +9,10 @@ import org.bukkit.Server;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 // This method contains an undocumented sub command #EasterEgg
+
 public class Commandjump extends EssentialsCommand
 {
+
 	public Commandjump()
 	{
 		super("jump");

@@ -21,6 +21,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Kit
 {
+
 	final IEssentials ess;
 	final String kitName;
 	final Map<String, Object> kit;

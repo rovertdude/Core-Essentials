@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 public class Commandkickall extends EssentialsCommand
 {
+
 	public Commandkickall()
 	{
 		super("kickall");

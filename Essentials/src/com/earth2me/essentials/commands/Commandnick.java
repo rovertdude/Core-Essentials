@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 public class Commandnick extends EssentialsLoopCommand
 {
+
 	public Commandnick()
 	{
 		super("nick");

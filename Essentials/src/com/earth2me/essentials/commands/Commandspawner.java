@@ -16,6 +16,7 @@ import org.bukkit.block.CreatureSpawner;
 
 public class Commandspawner extends EssentialsCommand
 {
+
 	public Commandspawner()
 	{
 		super("spawner");

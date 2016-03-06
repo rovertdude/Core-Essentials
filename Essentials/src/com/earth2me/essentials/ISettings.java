@@ -14,6 +14,7 @@ import org.bukkit.event.EventPriority;
 
 public interface ISettings extends IConf
 {
+
 	boolean areSignsDisabled();
 
 	IText getAnnounceNewPlayerFormat();
@@ -29,9 +30,9 @@ public interface ISettings extends IConf
 	String getChatFormat(String group);
 
 	int getChatRadius();
-	
+
 	char getChatShout();
-	
+
 	char getChatQuestion();
 
 	BigDecimal getCommandCost(IEssentialsCommand cmd);
@@ -193,7 +194,7 @@ public interface ISettings extends IConf
 	int getMailsPerMinute();
 
 	long getEconomyLagWarning();
-	
+
 	long getPermissionsLagWarning();
 
 	void setEssentialsChatActive(boolean b);

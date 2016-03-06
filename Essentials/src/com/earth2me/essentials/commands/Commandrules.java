@@ -10,6 +10,7 @@ import org.bukkit.Server;
 
 public class Commandrules extends EssentialsCommand
 {
+
 	public Commandrules()
 	{
 		super("rules");
@@ -22,7 +23,7 @@ public class Commandrules extends EssentialsCommand
 		{
 			ess.getUser(sender.getPlayer()).setDisplayNick();
 		}
-		
+
 		final IText input = new TextInput(sender, "rules", true, ess);
 		final IText output = new KeywordReplacer(input, sender, ess);
 		final TextPager pager = new TextPager(output);

@@ -32,6 +32,7 @@ import org.bukkit.util.Vector;
 
 public class EssentialsConf extends YamlConfiguration
 {
+
 	protected static final Logger LOGGER = Logger.getLogger("Essentials");
 	protected final File configFile;
 	protected String templateName = null;
@@ -118,7 +119,6 @@ public class EssentialsConf extends YamlConfiguration
 				return;
 			}
 		}
-
 
 		try
 		{
@@ -365,6 +365,7 @@ public class EssentialsConf extends YamlConfiguration
 
 	private static class WriteRunner implements Runnable
 	{
+
 		private final File configFile;
 		private final String data;
 		private final AtomicInteger pendingDiskWrites;

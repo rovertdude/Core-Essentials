@@ -18,6 +18,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class EssentialsEntityListener implements Listener
 {
+
 	private static final Logger LOGGER = Logger.getLogger("Essentials");
 	private static final transient Pattern powertoolPlayer = Pattern.compile("\\{player\\}");
 	private final IEssentials ess;
@@ -108,6 +109,7 @@ public class EssentialsEntityListener implements Listener
 
 					class PowerToolInteractTask implements Runnable
 					{
+
 						@Override
 						public void run()
 						{

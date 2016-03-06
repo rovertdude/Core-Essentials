@@ -12,6 +12,7 @@ import org.bukkit.Server;
 
 public class Commandlist extends EssentialsCommand
 {
+
 	public Commandlist()
 	{
 		super("list");

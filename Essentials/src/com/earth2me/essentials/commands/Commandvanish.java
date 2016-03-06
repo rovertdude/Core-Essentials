@@ -8,6 +8,7 @@ import org.bukkit.Server;
 
 public class Commandvanish extends EssentialsToggleCommand
 {
+
 	public Commandvanish()
 	{
 		super("vanish", "essentials.vanish.others");

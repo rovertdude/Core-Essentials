@@ -11,6 +11,7 @@ import org.bukkit.TreeType;
 
 public class Commandtree extends EssentialsCommand
 {
+
 	public Commandtree()
 	{
 		super("tree");

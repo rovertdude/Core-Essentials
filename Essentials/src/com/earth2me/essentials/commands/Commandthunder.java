@@ -8,6 +8,7 @@ import org.bukkit.World;
 
 public class Commandthunder extends EssentialsCommand
 {
+
 	public Commandthunder()
 	{
 		super("thunder");

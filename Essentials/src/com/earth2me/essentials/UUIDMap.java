@@ -23,6 +23,7 @@ import org.bukkit.Bukkit;
 
 public class UUIDMap
 {
+
 	private final transient net.ess3.api.IEssentials ess;
 	private File userList;
 	private final transient Pattern splitPattern = Pattern.compile(",");
@@ -147,6 +148,7 @@ public class UUIDMap
 
 	private static class WriteRunner implements Runnable
 	{
+
 		private final File location;
 		private final File endFile;
 		private final ConcurrentSkipListMap<String, UUID> names;

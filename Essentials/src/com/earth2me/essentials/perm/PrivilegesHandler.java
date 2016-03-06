@@ -8,14 +8,16 @@ import net.krinsoft.privileges.groups.GroupManager;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
+
 public class PrivilegesHandler extends SuperpermsHandler
 {
+
 	private final transient Privileges plugin;
 	private final GroupManager manager;
 
 	public PrivilegesHandler(final Plugin plugin)
 	{
-		this.plugin = (Privileges) plugin;
+		this.plugin = (Privileges)plugin;
 		this.manager = this.plugin.getGroupManager();
 	}
 

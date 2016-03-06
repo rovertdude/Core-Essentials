@@ -13,6 +13,7 @@ import org.bukkit.plugin.Plugin;
  */
 public class MCUR implements Method
 {
+
 	private Currency currencyList;
 
 	@Override
@@ -118,6 +119,7 @@ public class MCUR implements Method
 
 	public class MCurrencyAccount implements MethodAccount
 	{
+
 		private final String name;
 
 		public MCurrencyAccount(String name)

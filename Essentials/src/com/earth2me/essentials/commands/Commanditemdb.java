@@ -9,6 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Commanditemdb extends EssentialsCommand
 {
+
 	public Commanditemdb()
 	{
 		super("itemdb");

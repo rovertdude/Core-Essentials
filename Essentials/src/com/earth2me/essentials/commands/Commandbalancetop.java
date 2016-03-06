@@ -16,6 +16,7 @@ import org.bukkit.Server;
 
 public class Commandbalancetop extends EssentialsCommand
 {
+
 	public Commandbalancetop()
 	{
 		super("balancetop");
@@ -78,7 +79,7 @@ public class Commandbalancetop extends EssentialsCommand
 
 	}
 
-	private static void outputCache(final CommandSource sender, String command,  int page)
+	private static void outputCache(final CommandSource sender, String command, int page)
 	{
 		final Calendar cal = Calendar.getInstance();
 		cal.setTimeInMillis(cacheage);
@@ -90,6 +91,7 @@ public class Commandbalancetop extends EssentialsCommand
 
 	private class Calculator implements Runnable
 	{
+
 		private final transient Viewer viewer;
 		private final boolean force;
 
@@ -164,6 +166,7 @@ public class Commandbalancetop extends EssentialsCommand
 
 	private class Viewer implements Runnable
 	{
+
 		private final transient CommandSource sender;
 		private final transient int page;
 		private final transient boolean force;

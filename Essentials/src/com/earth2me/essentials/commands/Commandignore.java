@@ -7,6 +7,7 @@ import org.bukkit.Server;
 
 public class Commandignore extends EssentialsCommand
 {
+
 	public Commandignore()
 	{
 		super("ignore");
@@ -40,7 +41,8 @@ public class Commandignore extends EssentialsCommand
 			{
 				throw new PlayerNotFoundException();
 			}
-			if (player.isIgnoreExempt()) {
+			if (player.isIgnoreExempt())
+			{
 				user.sendMessage(tl("ignoreExempt"));
 			}
 			else if (user.isIgnoredPlayer(player))

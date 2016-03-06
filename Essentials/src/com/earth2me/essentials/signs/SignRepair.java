@@ -11,6 +11,7 @@ import net.ess3.api.IEssentials;
 
 public class SignRepair extends EssentialsSign
 {
+
 	public SignRepair()
 	{
 		super("Repair");

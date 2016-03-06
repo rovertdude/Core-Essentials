@@ -15,6 +15,7 @@ import org.bukkit.inventory.*;
 
 public class Commandrecipe extends EssentialsCommand
 {
+
 	public Commandrecipe()
 	{
 		super("recipe");

@@ -17,6 +17,7 @@ import org.bukkit.inventory.ItemStack;
 
 public abstract class UserData extends PlayerExtension implements IConf
 {
+
 	protected final transient IEssentials ess;
 	private final EssentialsUserConf config;
 	private final File folder;

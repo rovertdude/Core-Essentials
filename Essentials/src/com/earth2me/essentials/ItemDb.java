@@ -14,6 +14,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class ItemDb implements IConf, net.ess3.api.IItemDb
 {
+
 	private final transient IEssentials ess;
 	private final transient Map<String, Integer> items = new HashMap<String, Integer>();
 	private final transient Map<ItemData, List<String>> names = new HashMap<ItemData, List<String>>();
@@ -254,6 +255,7 @@ public class ItemDb implements IConf, net.ess3.api.IItemDb
 
 	static class ItemData
 	{
+
 		final private int itemNo;
 		final private short itemData;
 
@@ -299,6 +301,7 @@ public class ItemDb implements IConf, net.ess3.api.IItemDb
 
 	class LengthCompare implements java.util.Comparator<String>
 	{
+
 		public LengthCompare()
 		{
 			super();

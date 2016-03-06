@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Commandtpo extends EssentialsCommand
 {
+
 	public Commandtpo()
 	{
 		super("tpo");

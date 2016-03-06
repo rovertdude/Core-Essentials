@@ -19,6 +19,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Commandpotion extends EssentialsCommand
 {
+
 	public Commandpotion()
 	{
 		super("potion");

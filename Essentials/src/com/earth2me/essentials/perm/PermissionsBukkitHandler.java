@@ -12,6 +12,7 @@ import org.bukkit.plugin.Plugin;
 
 public class PermissionsBukkitHandler extends SuperpermsHandler
 {
+
 	private final transient PermissionsPlugin plugin;
 
 	public PermissionsBukkitHandler(final Plugin plugin)

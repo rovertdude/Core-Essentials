@@ -13,6 +13,7 @@ import org.bukkit.command.CommandSender;
 
 public class Backup implements Runnable
 {
+
 	private static final Logger LOGGER = Logger.getLogger("Essentials");
 	private transient final Server server;
 	private transient final IEssentials ess;
@@ -148,6 +149,7 @@ public class Backup implements Runnable
 				{
 					class BackupEnableSaveTask implements Runnable
 					{
+
 						@Override
 						public void run()
 						{

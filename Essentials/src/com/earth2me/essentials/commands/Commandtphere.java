@@ -9,6 +9,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Commandtphere extends EssentialsCommand
 {
+
 	public Commandtphere()
 	{
 		super("tphere");

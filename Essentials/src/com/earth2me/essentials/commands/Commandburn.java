@@ -8,6 +8,7 @@ import org.bukkit.Server;
 
 public class Commandburn extends EssentialsCommand
 {
+
 	public Commandburn()
 	{
 		super("burn");

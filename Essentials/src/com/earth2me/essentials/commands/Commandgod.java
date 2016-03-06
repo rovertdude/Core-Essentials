@@ -9,6 +9,7 @@ import org.bukkit.Server;
 
 public class Commandgod extends EssentialsToggleCommand
 {
+
 	public Commandgod()
 	{
 		super("god", "essentials.god.others");

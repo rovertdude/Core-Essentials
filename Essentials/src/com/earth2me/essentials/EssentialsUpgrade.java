@@ -23,6 +23,7 @@ import org.bukkit.World;
 
 public class EssentialsUpgrade
 {
+
 	private final static Logger LOGGER = Logger.getLogger("Essentials");
 	private final transient IEssentials ess;
 	private final transient EssentialsConf doneFile;
@@ -698,7 +699,7 @@ public class EssentialsUpgrade
 			final File pFile = new File(userdir, string);
 			final EssentialsConf conf = new EssentialsConf(pFile);
 			conf.load();
-			
+
 			String banReason;
 			Long banTimeout;
 
@@ -729,7 +730,7 @@ public class EssentialsUpgrade
 				{
 					banTimeout = 0L;
 				}
-				
+
 				if (BanLookup.isBanned(ess, playerName))
 				{
 					updateBan(playerName, banReason, banTimeout);

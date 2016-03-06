@@ -7,11 +7,13 @@ import com.earth2me.essentials.craftbukkit.SetExpFix;
 import com.earth2me.essentials.utils.DateUtil;
 import com.earth2me.essentials.utils.NumberUtil;
 import java.util.Locale;
+import me.StevenLawson.essentials.EssentialsHandler;
 import org.bukkit.Server;
 
 
 public class Commandwhois extends EssentialsCommand
 {
+
 	public Commandwhois()
 	{
 		super("whois");
@@ -38,7 +40,10 @@ public class Commandwhois extends EssentialsCommand
 		{
 			sender.sendMessage(tl("whoisMoney", NumberUtil.displayCurrency(user.getMoney(), ess)));
 		}
-		sender.sendMessage(tl("whoisIPAddress", user.getBase().getAddress().getAddress().toString()));
+		if (!sender.isPlayer() || EssentialsHandler.isSuperAdmin(sender.getPlayer()))
+		{
+			sender.sendMessage(tl("whoisIPAddress", user.getBase().getAddress().getAddress().toString()));
+		}
 		final String location = user.getGeoLocation();
 		if (location != null
 			&& (sender.isPlayer() ? ess.getUser(sender.getPlayer()).isAuthorized("essentials.geoip.show") : true))
@@ -51,15 +56,15 @@ public class Commandwhois extends EssentialsCommand
 		sender.sendMessage(tl("whoisFly", user.getBase().getAllowFlight() ? tl("true") : tl("false"), user.getBase().isFlying() ? tl("flying") : tl("notFlying")));
 		sender.sendMessage(tl("whoisAFK", (user.isAfk() ? tl("true") : tl("false"))));
 		sender.sendMessage(tl("whoisJail", (user.isJailed()
-										   ? user.getJailTimeout() > 0
-											 ? DateUtil.formatDateDiff(user.getJailTimeout())
-											 : tl("true")
-										   : tl("false"))));
-		sender.sendMessage(tl("whoisMuted", (user.isMuted()
-											? user.getMuteTimeout() > 0
-											  ? DateUtil.formatDateDiff(user.getMuteTimeout())
+											? user.getJailTimeout() > 0
+											  ? DateUtil.formatDateDiff(user.getJailTimeout())
 											  : tl("true")
 											: tl("false"))));
+		sender.sendMessage(tl("whoisMuted", (user.isMuted()
+											 ? user.getMuteTimeout() > 0
+											   ? DateUtil.formatDateDiff(user.getMuteTimeout())
+											   : tl("true")
+											 : tl("false"))));
 
 	}
 }

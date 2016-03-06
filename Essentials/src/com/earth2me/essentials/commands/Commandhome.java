@@ -13,6 +13,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Commandhome extends EssentialsCommand
 {
+
 	public Commandhome()
 	{
 		super("home");
@@ -109,7 +110,7 @@ public class Commandhome extends EssentialsCommand
 	}
 
 	private void goHome(final User user, final User player, final String home, final Trade charge) throws Exception
-	{		
+	{
 		if (home.length() < 1)
 		{
 			throw new NotEnoughArgumentsException();

@@ -10,11 +10,12 @@ import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 
-
 // Suffixes can be appended on the end of a mob name to make it plural
 // Entities without a suffix, will default to 's'
+
 public enum Mob
 {
+
 	CHICKEN("Chicken", Enemies.FRIENDLY, EntityType.CHICKEN),
 	COW("Cow", Enemies.FRIENDLY, EntityType.COW),
 	CREEPER("Creeper", Enemies.ENEMY, EntityType.CREEPER),
@@ -108,6 +109,7 @@ public enum Mob
 
 	public enum Enemies
 	{
+
 		FRIENDLY("friendly"),
 		NEUTRAL("neutral"),
 		ENEMY("enemy");
@@ -137,6 +139,7 @@ public enum Mob
 
 	public static class MobException extends Exception
 	{
+
 		private static final long serialVersionUID = 1L;
 	}
 }

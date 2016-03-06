@@ -8,6 +8,7 @@ import net.ess3.api.IEssentials;
 
 public class SignMail extends EssentialsSign
 {
+
 	public SignMail()
 	{
 		super("Mail");

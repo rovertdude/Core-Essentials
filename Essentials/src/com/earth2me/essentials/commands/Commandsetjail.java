@@ -8,6 +8,7 @@ import org.bukkit.Server;
 
 public class Commandsetjail extends EssentialsCommand
 {
+
 	public Commandsetjail()
 	{
 		super("setjail");

@@ -11,6 +11,7 @@ import org.bukkit.inventory.PlayerInventory;
 
 public class Commandhat extends EssentialsCommand
 {
+
 	public Commandhat()
 	{
 		super("hat");

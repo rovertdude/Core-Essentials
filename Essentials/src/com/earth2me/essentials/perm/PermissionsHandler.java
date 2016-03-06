@@ -12,6 +12,7 @@ import org.bukkit.plugin.PluginManager;
 
 public class PermissionsHandler implements IPermissionsHandler
 {
+
 	private transient IPermissionsHandler handler = new NullPermissionsHandler();
 	private transient String defaultGroup = "default";
 	private final transient Essentials ess;
@@ -119,17 +120,6 @@ public class PermissionsHandler implements IPermissionsHandler
 			{
 				LOGGER.log(Level.INFO, "Essentials: Using PermissionsEx based permissions.");
 				handler = new PermissionsExHandler();
-			}
-			return;
-		}
-
-		final Plugin GMplugin = pluginManager.getPlugin("GroupManager");
-		if (GMplugin != null && GMplugin.isEnabled())
-		{
-			if (!(handler instanceof GroupManagerHandler))
-			{
-				LOGGER.log(Level.INFO, "Essentials: Using GroupManager based permissions.");
-				handler = new GroupManagerHandler(GMplugin);
 			}
 			return;
 		}

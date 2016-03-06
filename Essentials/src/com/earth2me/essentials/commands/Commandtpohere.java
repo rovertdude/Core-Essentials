@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Commandtpohere extends EssentialsCommand
 {
+
 	public Commandtpohere()
 	{
 		super("tpohere");

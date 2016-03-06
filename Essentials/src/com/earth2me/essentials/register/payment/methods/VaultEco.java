@@ -9,6 +9,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class VaultEco implements Method
 {
+
 	private Vault vault;
 	private Economy economy;
 
@@ -34,12 +35,12 @@ public class VaultEco implements Method
 	{
 		return this.vault.getDescription().getName();
 	}
-	
+
 	public String getEconomy()
 	{
 		return economy == null ? "NoEco" : economy.getName();
 	}
-	
+
 	@Override
 	public String getLongName()
 	{
@@ -158,6 +159,7 @@ public class VaultEco implements Method
 
 	public class VaultAccount implements MethodAccount
 	{
+
 		private final String name;
 		private final Economy economy;
 
@@ -247,6 +249,7 @@ public class VaultEco implements Method
 
 	public class VaultBankAccount implements MethodBankAccount
 	{
+
 		private final String bank;
 		private final Economy economy;
 

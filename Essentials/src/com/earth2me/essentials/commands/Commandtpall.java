@@ -11,6 +11,7 @@ import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
 public class Commandtpall extends EssentialsCommand
 {
+
 	public Commandtpall()
 	{
 		super("tpall");

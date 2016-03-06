@@ -11,6 +11,7 @@ import org.bukkit.Server;
 
 public class Commandkick extends EssentialsCommand
 {
+
 	public Commandkick()
 	{
 		super("kick");

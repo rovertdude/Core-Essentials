@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 public class SignGameMode extends EssentialsSign
 {
+
 	public SignGameMode()
 	{
 		super("GameMode");

@@ -14,6 +14,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Commandsell extends EssentialsCommand
 {
+
 	public Commandsell()
 	{
 		super("sell");
@@ -84,12 +85,13 @@ public class Commandsell extends EssentialsCommand
 
 		if (amount <= 0)
 		{
-			if (!isBulkSell) {
+			if (!isBulkSell)
+			{
 				user.sendMessage(tl("itemSold", NumberUtil.displayCurrency(BigDecimal.ZERO, ess), BigDecimal.ZERO, is.getType().toString().toLowerCase(Locale.ENGLISH), NumberUtil.displayCurrency(worth, ess)));
 			}
 			return BigDecimal.ZERO;
 		}
-		
+
 		BigDecimal result = worth.multiply(BigDecimal.valueOf(amount));
 
 		//TODO: Prices for Enchantments

@@ -7,6 +7,7 @@ import org.bukkit.inventory.Inventory;
 
 public class Commandinvsee extends EssentialsCommand
 {
+
 	public Commandinvsee()
 	{
 		super("invsee");

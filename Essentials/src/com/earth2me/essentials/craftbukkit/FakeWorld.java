@@ -19,6 +19,7 @@ import org.bukkit.util.Vector;
 
 public class FakeWorld implements World
 {
+
 	private final String name;
 	private final Environment env;
 
@@ -747,4 +748,10 @@ public class FakeWorld implements World
 	{
 		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 	}
+
+	public Collection<Entity> getNearbyEntities(Location arg0, double arg1, double arg2, double arg3)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
+
 }

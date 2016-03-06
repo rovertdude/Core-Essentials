@@ -18,6 +18,7 @@ import org.bukkit.entity.Player;
 
 public class UserMap extends CacheLoader<String, User> implements IConf
 {
+
 	private final transient IEssentials ess;
 	private final transient LoadingCache<String, User> users;
 	private final transient ConcurrentSkipListSet<UUID> keys = new ConcurrentSkipListSet<UUID>();

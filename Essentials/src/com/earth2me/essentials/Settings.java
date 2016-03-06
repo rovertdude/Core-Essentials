@@ -23,6 +23,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Settings implements net.ess3.api.ISettings
 {
+
 	private final transient EssentialsConf config;
 	private static final Logger logger = Logger.getLogger("Essentials");
 	private final transient IEssentials ess;
@@ -1148,7 +1149,7 @@ public class Settings implements net.ess3.api.ISettings
 	{
 		return economyLagWarning;
 	}
-	
+
 	// #easteregg
 	private long permissionsLagWarning;
 

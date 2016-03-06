@@ -17,6 +17,7 @@ import org.bukkit.plugin.Plugin;
  */
 public class iCo5 implements Method
 {
+
 	private iConomy iConomy;
 
 	@Override
@@ -137,6 +138,7 @@ public class iCo5 implements Method
 
 	public class iCoAccount implements MethodAccount
 	{
+
 		private final Account account;
 		private final Holdings holdings;
 
@@ -251,6 +253,7 @@ public class iCo5 implements Method
 
 	public class iCoBankAccount implements MethodBankAccount
 	{
+
 		private final BankAccount account;
 		private final Holdings holdings;
 

@@ -14,6 +14,7 @@ import org.bukkit.Server;
 
 public class Commandtempban extends EssentialsCommand
 {
+
 	public Commandtempban()
 	{
 		super("tempban");

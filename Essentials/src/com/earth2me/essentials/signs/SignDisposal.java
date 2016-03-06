@@ -6,6 +6,7 @@ import net.ess3.api.IEssentials;
 
 public class SignDisposal extends EssentialsSign
 {
+
 	public SignDisposal()
 	{
 		super("Disposal");

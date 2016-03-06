@@ -9,6 +9,7 @@ import net.ess3.api.IEssentials;
 
 public class SignWeather extends EssentialsSign
 {
+
 	public SignWeather()
 	{
 		super("Weather");

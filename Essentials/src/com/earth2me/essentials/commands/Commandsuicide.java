@@ -8,6 +8,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 
 public class Commandsuicide extends EssentialsCommand
 {
+
 	public Commandsuicide()
 	{
 		super("suicide");

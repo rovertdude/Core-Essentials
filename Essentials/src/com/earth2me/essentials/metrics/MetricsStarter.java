@@ -13,12 +13,14 @@ import org.bukkit.configuration.ConfigurationSection;
 
 public class MetricsStarter implements Runnable
 {
+
 	private final IEssentials ess;
 	private transient Boolean start;
 
 
 	private enum Modules
 	{
+
 		Essentials,
 		EssentialsAntiBuild,
 		EssentialsAntiCheat,
@@ -228,6 +230,7 @@ public class MetricsStarter implements Runnable
 
 	private class SimplePlotter extends Plotter
 	{
+
 		public SimplePlotter(final String name)
 		{
 			super(name);

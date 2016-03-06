@@ -17,6 +17,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class EssentialsBlockListener implements Listener
 {
+
 	private final transient IEssentials ess;
 
 	public EssentialsBlockListener(final IEssentials ess)
@@ -58,6 +59,7 @@ public class EssentialsBlockListener implements Listener
 		{
 			class UnlimitedItemSpawnTask implements Runnable
 			{
+
 				@Override
 				public void run()
 				{

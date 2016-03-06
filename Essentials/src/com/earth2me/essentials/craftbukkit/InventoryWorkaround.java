@@ -13,6 +13,7 @@ import org.bukkit.inventory.ItemStack;
 
 public final class InventoryWorkaround
 {
+
 	private InventoryWorkaround()
 	{
 	}
@@ -66,9 +67,7 @@ public final class InventoryWorkaround
 		 * TODO: some optimization - Create a 'firstPartial' with a 'fromIndex' - Record the lastPartial per Material -
 		 * Cache firstEmpty result
 		 */
-
 		// combine items
-
 		final ItemStack[] combined = new ItemStack[items.length];
 		for (ItemStack item : items)
 		{
@@ -90,7 +89,6 @@ public final class InventoryWorkaround
 				}
 			}
 		}
-
 
 		for (int i = 0; i < combined.length; i++)
 		{

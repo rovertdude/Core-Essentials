@@ -7,8 +7,10 @@ import org.bukkit.Location;
 
 public interface IJails extends IReload
 {
-		/**
+
+	/**
 	 * Gets the location of the jail with the given name
+	 *
 	 * @param jailName The name of the jail
 	 * @return the location of the jail
 	 * @throws Exception if the jail does not exist
@@ -17,6 +19,7 @@ public interface IJails extends IReload
 
 	/**
 	 * Gets a list of jails by names
+	 *
 	 * @return a list of jails, if there are none the list will be empty
 	 * @throws Exception
 	 */
@@ -24,12 +27,14 @@ public interface IJails extends IReload
 
 	/**
 	 * Gets the number of jails
+	 *
 	 * @return the size of the list of jails
 	 */
 	int getCount();
 
 	/**
 	 * Remove the jail with the given name
+	 *
 	 * @param jail the jail to remove
 	 * @throws Exception if the jail does not exist
 	 */
@@ -37,6 +42,7 @@ public interface IJails extends IReload
 
 	/**
 	 * Attempts to send the given user to the given jail
+	 *
 	 * @param user the user to send to jail
 	 * @param jail the jail to send the user to
 	 * @throws Exception if the user is offline or jail does not exist
@@ -45,6 +51,7 @@ public interface IJails extends IReload
 
 	/**
 	 * Set a new jail with the given name and location
+	 *
 	 * @param jailName the name of the jail being set
 	 * @param loc the location of the jail being set
 	 * @throws Exception

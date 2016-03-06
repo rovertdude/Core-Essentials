@@ -12,6 +12,7 @@ import org.bukkit.Server;
 
 public class Commandpay extends EssentialsLoopCommand
 {
+
 	BigDecimal amount;
 
 	public Commandpay()

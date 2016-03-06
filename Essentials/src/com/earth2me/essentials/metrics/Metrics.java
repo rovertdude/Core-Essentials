@@ -23,7 +23,6 @@ package com.earth2me.essentials.metrics;
  * The views and conclusions contained in the software and documentation are those of the authors and contributors and
  * should not be interpreted as representing official policies, either expressed or implied, of anybody else.
  */
-
 import com.earth2me.essentials.IEssentials;
 import java.io.*;
 import java.net.Proxy;
@@ -39,6 +38,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.scheduler.BukkitTask;
+
 
 public class Metrics
 {
@@ -356,7 +356,6 @@ public class Metrics
 		int playersOnline = ((IEssentials)plugin).getOnlinePlayers().size();
 
 		// END server software specific section -- all code below does not use any code outside of this class / Java
-
 		// Construct the post data
 		StringBuilder json = new StringBuilder(1024);
 		json.append('{');
@@ -457,7 +456,6 @@ public class Metrics
 		{
 			connection = url.openConnection();
 		}
-
 
 		byte[] uncompressed = json.toString().getBytes();
 		byte[] compressed = gzip(json.toString());
@@ -690,6 +688,7 @@ public class Metrics
 	 */
 	public static class Graph
 	{
+
 		/**
 		 * The graph's name, alphanumeric and spaces only :) If it does not comply to the above when submitted, it is
 		 * rejected
@@ -777,6 +776,7 @@ public class Metrics
 	 */
 	public static abstract class Plotter
 	{
+
 		/**
 		 * The plot's name
 		 */
