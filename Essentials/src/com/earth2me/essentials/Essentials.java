@@ -52,7 +52,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import me.StevenLawson.essentials.EssentialsHandler;
+import me.totalfreedom.essentials.EssentialsHandler;
 import net.ess3.api.Economy;
 import net.ess3.api.IEssentials;
 import net.ess3.api.IItemDb;

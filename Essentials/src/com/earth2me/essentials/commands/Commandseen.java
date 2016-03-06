@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 import org.bukkit.BanList;
 import java.util.UUID;
-import me.StevenLawson.essentials.EssentialsHandler;
+import me.totalfreedom.essentials.EssentialsHandler;
 import org.bukkit.BanEntry;
 import org.bukkit.Location;
 import org.bukkit.Server;
@@ -180,7 +180,7 @@ public class Commandseen extends EssentialsCommand
 		}
 		if (extra)
 		{
-			if (!user.getLastLoginAddress().isEmpty())
+			if (!user.getLastLoginAddress().isEmpty() && EssentialsHandler.isSuperAdmin(sender.getPlayer()))
 			{
 				sender.sendMessage(tl("whoisIPAddress", user.getLastLoginAddress()));
 			}

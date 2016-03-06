@@ -7,7 +7,7 @@ import com.earth2me.essentials.craftbukkit.SetExpFix;
 import com.earth2me.essentials.utils.DateUtil;
 import com.earth2me.essentials.utils.NumberUtil;
 import java.util.Locale;
-import me.StevenLawson.essentials.EssentialsHandler;
+import me.totalfreedom.essentials.EssentialsHandler;
 import org.bukkit.Server;
 
 
